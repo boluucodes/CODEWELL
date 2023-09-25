@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../__MACOSX"
+		},
+		{
+			"path": "../Developer Portfolio Starter Files"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CODEWELL"
+	}
+}
