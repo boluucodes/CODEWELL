@@ -208,10 +208,13 @@ footer{
         transition: all .65s ease-in;
         z-index: 10;
     }
-    .hamburger,.line{
+    .hamburger,.line:not(:nth-child(3)){
         position: relative;
         z-index: 11;
-        transition: all .65s ease-in;
+        transition: all .6s ease-in;
+    }
+    .line:nth-child(3){
+        transition: all .2s ease-in;
     }
     nav ul{
         flex-direction: column;
