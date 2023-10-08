@@ -115,13 +115,15 @@ main{
     font-size: 1.5rem;
     gap: 1rem;
 }
-/* .spense-box{
-    transition: all .3s;
+.animation img{
+    opacity: .6;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out,scale 200ms ease-in 200ms;
 }
-.spense-box img:hover img{
-    translate: scale(1.1);
-    z-index: 5;
-} */
+.animation:hover img{
+    opacity: 1;
+    scale: 1.05;
+}
 .spensetext{
     width: 90%;
     margin-bottom: 1rem;
