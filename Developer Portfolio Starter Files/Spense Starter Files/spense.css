@@ -232,8 +232,134 @@ nav ul li:hover::before{
     width: 100%;
     height: 100%;
 }
-
-.side-container{
-    /* width: 40%; */
+.pre-footer{
+    display: flex;
+    justify-content: flex-start;
+    padding: .5% 4.5rem;
+    gap: 15%;
 }
-
+.video-box{
+    width: 100%;
+}
+.video-box img{
+    width: 100%;
+}
+.video-text{
+    width: 100%;
+    margin-top: 4.5rem;
+}
+.video-text h3{
+    font-size: 2.2rem;
+    margin-bottom: .1rem;
+    word-spacing: 5px;
+}
+.video-text p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.video-text a{
+    color: black;
+    text-decoration: underline;
+    font-weight: 500;
+    text-underline-offset: 3px;
+}
+.video-text span{
+    font-size: 1.3rem;
+}
+footer{
+    background-color: #000;
+    padding: 2% 4.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+div:has(.sub-links){
+    background-color: #000;
+    color: white;
+}
+.first-box{
+    background-color: #000;
+    color: white;
+    width: 30%;
+    display: flex;
+    row-gap: .5rem;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    flex-direction: column;
+}
+.spense-text{
+    opacity: 80%;
+}
+.second{
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column; 
+}
+.sub-links a{
+    display: block;
+    margin-bottom: .5rem;
+    opacity: 80%;
+    text-decoration: none;
+    color: white;
+}
+/* responsiveness */
+@media screen and (max-width:1024px) {
+    .top_section{
+        padding: 1% 1rem;
+        font-size: 90%;
+        word-spacing: 80%;
+    }
+    .nav_bar{
+        padding: 2% 2rem;
+    }
+    .first,.wrapper{
+        padding: 3% 2rem;
+    }
+    .text-wrap{
+    width: 85%;
+    }
+    .text-wrap h2{
+        font-size: 2.5rem;
+    }
+    .flex_container{
+        gap: 1rem;
+    }
+    .phone-container{
+        margin: 0% 2rem;
+    }
+    .text{
+        width: 100%;
+    }
+    .phone{
+        width: 100%;
+    }
+    .phone img{
+        width: 100%;
+    }
+    .pre-footer{
+        margin: 2% 0;
+    }
+    .video-text{
+        width: 100%;
+        margin-top: 2.5rem;
+    }
+    .video-text h3{
+        font-size: 1.5rem;
+        margin-bottom: .4rem;
+        word-spacing: 5px;
+    }
+    .video-text p{
+        font-size: 95%;
+        margin-bottom: .1rem;
+    }
+    footer{
+        padding: 2% 2rem;
+    }
+    .first-box{
+        width: 40%;
+    }
+    .spense-text p{
+        font-size: 1rem;
+        word-spacing: 1.5px;
+    }
+}
