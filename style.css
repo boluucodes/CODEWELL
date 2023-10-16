@@ -17,6 +17,18 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.anime-button{
+    background: linear-gradient(30deg,gold 50%,transparent 50%);
+    padding: 1rem;
+    border: 2px gold solid;
+    background-size: 500px;
+    background-position: 0%;
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+}
+.anime-button:hover{
+    background-position: 100%;
+}
 
 .logo{
     opacity: .95;
@@ -63,10 +75,7 @@ button{
     cursor: pointer;
     transition: all .45s ease-in-out;
 }
-header button:hover{
-    background-color: white;
-    color: green;
-}
+
 main{
     background-color: black;
 }
