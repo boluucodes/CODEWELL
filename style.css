@@ -6,7 +6,7 @@
 body{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-family: 'Fraunces', serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 header{
     background: black;
@@ -369,6 +369,17 @@ footer{
     .prefoot p{
         font-size: 90%;
         padding-top: 0;
+    }
+    .spense-box{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .flexbox img{
+        width: 10%;
+    }
+    .animation img{
+        width: 100%;
     }
 }
 
