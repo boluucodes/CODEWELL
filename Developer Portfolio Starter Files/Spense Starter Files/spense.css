@@ -52,6 +52,7 @@ body{
 nav ul li{
     position: relative;
 }
+nav ul li:nth-child(4),
 nav ul li:last-child{
     display: none;
 }
@@ -501,7 +502,8 @@ div:has(.sub-links){
     #checkbox:checked ~ .hamburger .line:nth-child(2){
         width: 0;
     }
-    nav ul li:last-child{
+    nav ul li:last-child,
+    nav ul li:nth-child(4){
         display: contents;
     } 
     .text-wrap{
