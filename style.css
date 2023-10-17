@@ -205,7 +205,7 @@ footer{
     }
 }
 @media screen and (max-width:768px){
-    header button{
+    header .anime-button{
         /* display: none; */
         position: fixed;
         left: -100%;

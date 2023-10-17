@@ -45,8 +45,15 @@ body{
     cursor: pointer;
     font-weight: 500;
 }
+
+#checkbox{
+    opacity: 0;
+}
 nav ul li{
     position: relative;
+}
+nav ul li:last-child{
+    display: none;
 }
 .div{
     display: flex;
@@ -440,80 +447,116 @@ div:has(.sub-links){
     }
 }
 @media screen and (max-width:425px) {
-    .nav,.div{
-        /* display: none; */
+    .nav{
         position: fixed;
-        top: 0;
         left: -100%;
-        flex-direction: column;
-        display: block;
-        font-size: 2.5rem;
-        row-gap: 1rem;
+        width: 100%;
+        top: 0;
+        transition: all .65s ease-in;
+        z-index: 5;
     }
-    body{
+    .nav ul{
+        flex-direction: column;
+        background-color: #e3e3e3;
+        row-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        height: 100vh;
+        text-align: center;
+        padding: 1rem 0;
+        overflow: scroll;
+    }
+    .div{
+        position: fixed;
+        left: -100%;
+    }
+    header{
         overflow-x: hidden;
     }
-    label{
+    .hamburger,.line{
         position: relative;
+        z-index: 11;
+        transition: all .4s ease-in-out;
     }
-    /* label .menu{
-        position: absolute;
-        z-index: 19;
-        border-radius: 50% 50% 50% 50%;
-        background: #000;
-        transition: .5s ease-in-out;
-        box-shadow: 0 0 0 0 #000, 0 0 0 0 #000;
-        cursor: pointer;
-        top: -50px;
-        transition: .5s ease-in-out;
-        right: -52px;
-        width: 80px;
-        height: 80px;
-    } */
-    label .hamburger{
-        position: absolute;
-        background-color: #000;
-        top: 35%;
-        z-index: 20;
-        right: 70%;
-        width: 25px;
-        height: 2px;
-        border-radius: 10px;
-        display: block;
+    .line{
+        width: 30px;
         transform-origin: center;
-        transition: .5s ease-in-out;
+        background-color: #000;
+        height: 3px;
+    }    
+    .line:not(:last-child){
+        margin-bottom: 3px;
     }
-    label .hamburger::after,label .hamburger::before{
-        transition: .5s ease-in-out;
-        content: "";
-        position: absolute;
-        display: block;
-        width: 100%;
-        background: inherit;
-        height: 100%;    
-    }
-    label .hamburger::before{
-        top: -5px;
-    }
-    label .hamburger::after{
-        top: 5px;
-    }
-    input{
-        opacity: 0;
-    }
-    input:checked + .menu .hamburger{
-        transform: rotate(45deg);
-    }
-    input:checked + .menu .hamburger::after{
-        transform: rotate(90deg);
-        top: 0;
-    }
-    input:checked + .menu .hamburger::before{
-        transform: rotate(90deg);
-        top: 0;
-    }
-    label input:checked ~ .nav{
+    #checkbox:checked ~ .nav{
         left: 0;
     }
-    
+    #checkbox:checked ~ .hamburger .line:nth-child(1){
+        transform: rotate(45deg) translateY(7px);
+    }
+    #checkbox:checked ~ .hamburger .line:nth-child(3){
+        transform: rotate(-45deg) translateY(-9px);
+    }
+    #checkbox:checked ~ .hamburger .line:nth-child(2){
+        width: 0;
+    }
+    nav ul li:last-child{
+        display: contents;
+    } 
+    .text-wrap{
+        width: 100%;
+    }  
+    .text-wrap h2{
+        font-size: 1.7rem;
+    } 
+    .text-wrap p{
+        font-size: 95%;
+    }
+    .flex_container img{
+        width: 4%;
+    }
+    .flex_container p{
+        font-size: 95%;
+    }
+    .flex_container:has(input){
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+    .wrap img{
+        width: 95%;
+    }
+    .head-text{
+        width: 70%;
+    }
+    .head-text h2{
+        font-size: 1.7rem;
+    }
+    .text{
+        width: 100%;
+    }
+    .text p{
+        font-size: 95%;
+    }
+    .pre-footer{
+        margin: 0;
+        padding: 0 2rem;
+    }
+    .video-text{
+        width: 100%;
+    }
+    .video-text h3{
+        font-size: 2rem;
+    }
+    .video-text p{
+        font-size: 90%;
+    }
+    footer{
+        row-gap: 3rem;
+        column-gap: 20%;
+        justify-content: space-between;
+    }
+    .first-box{
+        width: 100%;
+    }
 }
