@@ -33,7 +33,7 @@ body{
 }
 .header-text{
     padding-top: 4rem;
-    width: 90%;
+    width: 100%;
 }
 .header-text h1{
     font-size: 3rem;
@@ -195,6 +195,9 @@ header{
     }
     .second{
         overflow:hidden;
+    }
+    .container{
+        margin-top: 1rem;
     }
     .first{
         padding-left: 1rem;
