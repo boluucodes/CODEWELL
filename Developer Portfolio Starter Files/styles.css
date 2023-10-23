@@ -29,16 +29,19 @@ body{
     padding-bottom: 5rem;
 }
 .hero-image{
-    width: 50%;
+    width: 90%;
 }
 .header-text{
     padding-top: 4rem;
-    width: 85%;
+    width: 90%;
 }
 .header-text h1{
     font-size: 3rem;
     font-weight: 600;
     word-spacing: 3px;
+}
+.header-text p{
+    font-weight: 300;
 }
 .flex-box{
     padding-top: 1.5rem;
@@ -46,7 +49,7 @@ body{
 .box{
     display: flex;
     word-spacing: 1.2px;
-    font-weight: 500;
+    font-weight: 300;
     gap: .5rem;
     margin-bottom: 1rem;
 }
@@ -55,11 +58,16 @@ body{
     gap: 5%;
     padding-top: 1rem;
 }
+.desktop-image{
+    display: none;
+}
 
 html span{
     transition: none;
 }
-
+.introduction p{
+    font-weight: 300;
+}
 .container{
     transition: .5s ease-in-out;
     max-width: 200px;
@@ -107,6 +115,9 @@ html span{
 .alternate::after{
    left: 50%;
 }
+header{
+    display: none;
+}
 .alternate span::before,
 .alternate span::after{
    bottom: 0;
@@ -124,4 +135,82 @@ html span{
 .alternate:hover span::after
 {
    height: 40px;
+}
+/* respnsiveness */
+@media screen and (max-width:1024px) {
+    
+    .header-text{
+        width: 100%;
+    }
+    .header-text h1{
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+    .header-text p{
+        font-size: 90%;
+    }
+    .footer-icons{
+        gap: 2%;
+    }
+}
+@media screen and (max-width:768px){
+    .logo-box{
+        display: none;
+    }
+    header{
+        display: contents;
+    }
+    .logo{
+        padding-left: 2rem;
+        margin: 2rem 0;
+    }
+    .main-section{
+        flex-direction: column-reverse;
+    }
+    body{
+        padding-left: 0;
+    }
+    .first{
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .hero-image{
+        display: none;
+    }
+    .desktop-image{
+        display: contents;
+    }
+    .container{
+        transition: none;
+    }
+    .container a{
+        background: black;
+        color: #fff;
+    }
+}
+@media screen and (max-width:425px){
+    .desktop-image img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .second{
+        overflow:hidden;
+    }
+    .first{
+        padding-left: 1rem;
+    }
+    .header-text{
+        width: 90vw;
+    }
+    .box{
+        margin-bottom: .5rem;
+    }
+    .header-text h1{
+        line-height: 1.2;
+        font-size: 2rem;
+    }
+    .first
+    ,.second{
+        width: 100%;
+    }
 }
