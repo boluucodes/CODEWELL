@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    /* transition: .5s ease-in-out; */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* introductory pages */
+body{
+    background: #fff;
+    padding-left: 3rem;
+    font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
+}
+.main-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.first{
+    padding: 2.5rem 4rem 4rem 2rem;
+    /* margin-bottom: 2rem; */
+}
+.logo-box{
+    padding-bottom: 5rem;
+}
+.hero-image{
+    width: 50%;
+}
+.header-text{
+    padding-top: 4rem;
+    width: 85%;
+}
+.header-text h1{
+    font-size: 3rem;
+    font-weight: 600;
+    word-spacing: 3px;
+}
+.flex-box{
+    padding-top: 1.5rem;
+}
+.box{
+    display: flex;
+    word-spacing: 1.2px;
+    font-weight: 500;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+.footer-icons{
+    display: flex;
+    gap: 5%;
+    padding-top: 1rem;
+}
+
+html span{
+    transition: none;
+}
+
+.container{
+    transition: .5s ease-in-out;
+    max-width: 200px;
+    padding: .5rem 0 2rem 0;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+.container a{
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    transition: .5s ease-in-out;
+    display: block;
+    padding: 0 1rem;
+    border-radius: 10px;
+    /* margin: 0 auto; */
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    width: 100%;
+    max-width: 250px;
+    text-transform: capitalize;
+    border: 2px solid black;
+}
+.container a:hover{
+   color: white;
+}
+
+.alternate::before,
+.alternate::after,
+.alternate span::after,
+.alternate span::before{
+   content: '';
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   transition: .5s ease-in-out;
+   width: 25%;
+   height: 0;
+   background-color: black;
+}
+.alternate::before{
+   left: 0;
+}
+.alternate::after{
+   left: 50%;
+}
+.alternate span::before,
+.alternate span::after{
+   bottom: 0;
+   top: auto;    
+}
+.alternate span::before{
+   left: 25%;
+}
+.alternate span::after{
+   left: 75%;
+}
+.alternate:hover::before,
+.alternate:hover:after,
+.alternate:hover span::before,
+.alternate:hover span::after
+{
+   height: 40px;
+}
