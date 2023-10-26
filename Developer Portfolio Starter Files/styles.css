@@ -172,7 +172,7 @@ header{
     }
     .first{
         padding-left: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     .hero-image{
         display: none;
@@ -191,22 +191,33 @@ header{
 @media screen and (max-width:425px){
     .desktop-image img{
         width: 100%;
-        object-fit: cover;
+        /* object-fit: cover; */
     }
-    .second{
-        overflow:hidden;
+    .desktop-image{
+        width: 100%;
     }
     .container{
         margin-top: 1rem;
     }
     .first{
         padding-left: 1rem;
+        margin-bottom: 0rem;
     }
     .header-text{
         width: 90vw;
     }
     .box{
         margin-bottom: .5rem;
+        font-size: 80%;
+    }
+    .box img{
+        width: 5%;
+    }
+    .box p{
+        padding-top: .2rem;
+    }
+    .footer-icons img{
+        width: 40%;
     }
     .header-text h1{
         line-height: 1.2;
