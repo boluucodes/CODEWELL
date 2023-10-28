@@ -7,6 +7,8 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+}
+html{
     scroll-behavior: smooth;
 }
 /* header and navigation */
@@ -20,6 +22,9 @@ header{
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     text-align: center;
+}
+.hamburger{
+    display: none;
 }
 .top-bar a{
     text-decoration-color: lightblue;
@@ -164,6 +169,10 @@ img{
     justify-content: space-between;
     padding-bottom: 1rem;
 }
+.hamburger,
+#checkbox{
+    display: none;
+}
 .word{
     padding-bottom: 1rem;
     margin-bottom: 2rem;
@@ -242,4 +251,122 @@ img{
     .name-box h3{
         font-size: 1rem;
     }
+}
+@media screen and (max-width:768px) {
+    .home,
+    .login-box{
+        display: none;
+    }
+    #checkbox{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+        background-color: rgba(255, 255, 255, .1);
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, .3);
+        padding: .5rem;
+    }
+    .line{
+        width: 25px;
+        margin: 0 auto;
+        height: 3px;
+        background: #000;
+    }
+    .line:not(:last-child){
+        margin-bottom: 3px;
+    }
+    .first{
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+        transition: none;
+    }
+    .map-container{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .map-container img{
+        width: 100%;
+    }
+    .map-container,
+    .container,
+    .comment-section{
+        padding: 2.5rem;
+        transition: none;
+    }
+    .text h2{
+        font-size: 1.2rem;
+    }
+    .time-box p{
+        font-size: 1rem;
+    }
+    .wrap-text p{
+        font-size: 1rem;
+    }
+    .word p{
+        font-size: 1.1rem;
+        word-spacing: 2px;
+    }
+    .message{
+        position: relative;
+        left: -70%;
+    }
+}
+@media screen and (max-width:425px) {
+        .top-bar{
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            padding: 2.5% 2rem;
+        }
+        .nav-bar{
+            padding: 3% 1rem;
+            margin: 2% 0;
+        }
+        .map-container img{
+        width: 100%;
+        }
+    .map-container,
+    .container,
+    .comment-section{
+        padding: 1.3rem;
+        transition: none;
+        }
+        .wrap-text p{
+            font-size: .9rem;
+            line-height: 1.6;
+            /* word-spacing: px; */
+            letter-spacing: 1.2px;
+        }
+        .word p{
+            font-size: 92%;
+        }
+        .message{
+            font-weight: 300;
+            transition: none;
+            max-width: 120px;
+            width: 100%;
+            padding: .5rem 1rem;
+            border-radius: 2%;
+        }
+        .message a{
+            display: block;
+            max-width: 500px;
+            width: 100%;
+            font-size: 85%;
+            margin: 0 auto;
+        }
+        #checkbox{
+            opacity: 0;
+        }
+        footer{
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+        }
+}
+@media screen and (max-width:320px) {
+   .timer p,
+   .name-box h3,
+   .text h2,
+   .time-box p{
+    font-size: 80%;
+   }        
 }

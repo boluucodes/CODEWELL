@@ -219,7 +219,8 @@ footer{
         transition: all .65s ease-in;
         z-index: 10;
     }
-    .hamburger,.line:not(:nth-child(3)){
+    .hamburger,
+    .line:not(:nth-child(3)){
         position: relative;
         z-index: 11;
         transition: all .6s ease-in;
