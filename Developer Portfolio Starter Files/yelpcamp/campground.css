@@ -129,11 +129,15 @@ section p{
     background-color: rgba(255, 255, 255, .1);
     box-shadow: 5px 5px 30px rgba(0, 0, 0, .3);
 }
+.wrapper img{
+    transition: all 250ms ease-in-out;
+}
 .map-container img{
     transition: inherit;
 }
 .map-container:hover 
-img{
+img,
+.wrapper:hover img{
     transform: scale(1.09);
 }
 .wrapper img{
